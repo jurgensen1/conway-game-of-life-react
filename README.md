@@ -3,7 +3,7 @@ Author: Stephen Jurgensen
 Date: 2022 October 18
 
 # Introduction 
-This is an React–Redux implementation of Conway’s game of life.   By adapting a similar project in the C language, the final   project in a C programming course at New Mexico Tech, into React. I was comforted with many new problems. This project was   independently pursued by me and has no connection with New   Mexico Tech or freeCodeCamp, however, many of the lessons I   learned in association with those organizations have   contributed.  to the success of this project. 
+This is an React–Redux implementation of Conway’s game of life.   By adapting a similar project in the C language, the final   project in a C programming course at New Mexico Tech, into React, I was comforted with many new problems. This project was   independently pursued by me and has no connection with New   Mexico Tech or freeCodeCamp, however, many of the lessons I   learned in association with those organizations have   contributed.  to the success of this project. 
    
 ## The rules of the game:   
 * Any live cell with fewer than two live neighbors dies, as if   by needs caused by under population.   
@@ -12,7 +12,8 @@ This is an React–Redux implementation of Conway’s game of life.   By adaptin
 * Any dead cell with exactly three live neighbors cells will   come to life.   
 (Note that each cell has up to eight neighbors).
 
-  
+## Live Link: 
+https://jurgensen1.github.io/conway-game-of-life-react/
 
 ## UX Features:  
 * Adjust the size of the grid and the size of cells.  
