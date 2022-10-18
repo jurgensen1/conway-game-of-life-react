@@ -1,46 +1,47 @@
-# Getting Started with Create React App and Redux
+## Project Conway’s Game of Life
+Author: Stephen Jurgensen
+Date: 2022 October 18
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Introduction 
+This is an React–Redux implementation of Conway’s game of life.   By adapting a similar project in the C language, the final   project in a C programming course at New Mexico Tech, into React. I was comforted with many new problems. This project was   independently pursued by me and has no connection with New   Mexico Tech or freeCodeCamp, however, many of the lessons I   learned in association with those organizations have   contributed.  to the success of this project. 
+   
+## The rules of the game:   
+* Any live cell with fewer than two live neighbors dies, as if   by needs caused by under population.   
+* Any live cell with more than three live neighbors dies, as if   by overcrowding.  
+* Any live cell with two or three live neighbors lives,   unchanged, to the next generation. 
+* Any dead cell with exactly three live neighbors cells will   come to life.   
+(Note that each cell has up to eight neighbors).
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+## UX Features:  
+* Adjust the size of the grid and the size of cells.  
+* Adjust the time between life cycles (1 to 2000   milliseconds).  
+* Select from one of three edge topologies: Klein, Torus,   and Hedge. 
+* Pause or Play the live cycle progression.  
+* Reset the grid and reset the life cycle to 0.   
+* Users can click on a given cell to bring it to life or.  kill it.   
+* Select a pre-created pattern to load on to the grid   using the index (id) number of the given file.  
+* Select a pre-created pattern to load by scrolling   through a list an selecting one file.  
+* Select a pre-created pattern to load by incrementing or   decrementing the file index (id).  
+* The list of scrollable file names allows users to select   one by clicking, this updates the grid, and changes the   color of the file’s parent element.   
+* As a user increments or decrements through the files,   the currently selected file remains in the center and   remains green.   
+* As a user increments or decrements through the files,   the currently selected file shifts to the in the center  and remains green.   
+* When a user inputs a new file name the file loads and  the file list updates it’s scroll location so that the   file is in view.  
+* The app is responsive to different screen sizes down to  600px wide.  
+  
+## Bugs 
+The known bugs include:  
+* A file with a pattern of a height or width beyond the  current grid dimensions will not load.  
+* The lack of useCallBack Hooks might cause excessive  rendering and slow down the app.  
 
-### `npm start`
+## Klein, Torus, and Hedge.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Klein:
+This edge setting connects the top to the bottom after a   180 deg rotation.   The left and right edges are connected without any rotataion. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Torus: 
+This edge setting connects the top to the bottom and the left to the right   edges without any rotataion. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Hedge: 
+This edge setting is limits the grid to the natural edges, minus one row   (top and bottom) and one column (left and right). This subtracted border of cells forms   the so-called hedge and is persistently dead cells, neither affected by nor affecting the   adjacent cells. 

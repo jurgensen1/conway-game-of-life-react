@@ -1,0 +1,294 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+}
+
+#lowerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#gridWrapper {
+    height: 600px;
+    width: 600px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#topMenu {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(179, 179, 179, .4);
+}
+input .slider{
+    color: green;
+}
+
+.topMenuInfo {
+    width: 300px;
+    letter-spacing: .1em;
+}
+.mainControls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 90%;
+    height: 130px;
+    border: 1px solid black;
+}
+.startStopButton {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
+.textbox {
+    width: 30px;
+    height: 20px;
+    margin: 10px;
+}
+
+.button {
+    width: 80px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.buttonRowCol{
+    width: 60px;
+    height: 45px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: .1em;
+}
+
+.buttonIncr {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+#fileForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.basicForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 90%;
+    height: 90px;
+    border: 1px solid black;
+}
+.topoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 90%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#fileSelector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 0px;
+    width: 90%;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.filesDisplayForm {
+    height: 300px;
+    width: 90%;
+}
+
+.contolHeader {
+    margin-top: 20px;
+}
+
+.controlInput {
+    width: 3em;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: rgb(223, 223, 223);
+}
+
+#topologySelect {
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    background-color: white;
+}
+.rowColContol{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rowColInputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#colInput{
+    margin-right: 30px;
+}
+label{
+    margin-top: 15px;
+}
+.slider {
+    margin-top: 10px;
+}
+
+#cardsWrapper {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 90%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* border-top: 1px solid black; */
+}
+
+.fileCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    /* justify-content: center; */
+    text-align: left;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    /* color: black; */
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fileCard:last-of-type {
+    border-bottom: none;
+}
+
+.mobileInterface {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(223, 223, 223);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+@media(min-width: 1201px) {
+    .mobileInterface {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .mobileInterface {
+        display: flex;
+    }
+
+    .interface {
+        display: none;
+    }
+
+    #topMenu {
+        max-width: 600px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(179, 179, 179, .4);
+    }
+
+    .topMenuInfo {
+        margin: 10px 0;
+    }
+}
