@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/conway-game-of-life-react/static/css/main.ac22afdc.css",
+    "main.css": "/conway-game-of-life-react/static/css/main.096d1809.css",
     "main.js": "/conway-game-of-life-react/static/js/main.e41a835c.js",
     "index.html": "/conway-game-of-life-react/index.html",
-    "main.ac22afdc.css.map": "/conway-game-of-life-react/static/css/main.ac22afdc.css.map",
+    "main.096d1809.css.map": "/conway-game-of-life-react/static/css/main.096d1809.css.map",
     "main.e41a835c.js.map": "/conway-game-of-life-react/static/js/main.e41a835c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac22afdc.css",
+    "static/css/main.096d1809.css",
     "static/js/main.e41a835c.js"
   ]
 }
